@@ -96,13 +96,37 @@ main {
 
 .chicken-tinder {
     top: 10vh;
-    left: 30vw;
+    left: 88vw;
 }
 .tappd {
-    top: 40vh;
-    left: 50vw;
+    top: 10vh;
+    left: 78vw;
 }
 .wiki-clicker {
-    top: 30vh;
-    left: 60vw;
+    top: 10vh;
+    left: 68vw;
+}
+
+@media only screen and (max-width: 700px) {
+
+    body, .background-container {
+        overflow: hidden;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .chicken-tinder {
+        top: 10vh;
+        left: 70vw;
+    }
+    .tappd {
+        top: 10vh;
+        left: 40vw;
+    }
+    .wiki-clicker {
+        top: 10vh;
+        left: 10vw;
+    }
 }
