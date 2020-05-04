@@ -15,9 +15,11 @@ function checkTime(i) {
 }
 
 dragElement(document.getElementById("icon"));
+dragElement(document.getElementById("icon1"));
+dragElement(document.getElementById("icon2"));
 
 function dragElement(elmnt) {
-    var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+    let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
     if (document.getElementById(elmnt.id + "-img")) {
         document.getElementById(elmnt.id + "-img").onmousedown = dragMouseDown;
     } else {

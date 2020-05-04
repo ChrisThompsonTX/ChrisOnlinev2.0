@@ -4,18 +4,30 @@ body {
     /* border-bottom: .1em solid #ABC9CB; */
 }
 
+.background-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
 .video-background {
     position: absolute;
-    width: 100vw;
+    height: 100vh;
     z-index: -1;
 }
 
 .nav-bar {
     background-color: #333333;
-    height: 3em;
+    height: 2.7em;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    z-index: 11;
+    width: 100vw;
 }
 
 .nav-left {
@@ -41,7 +53,30 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#icon {
+.nav-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+main {
+    overflow: hidden;
+}
+
+.social-links a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    margin: 0 .2em;
+}
+
+.social-links a:hover {
+    color: lightgray;
+}
+
+#icon, #icon1, #icon2 {
     position: absolute;
     z-index: 9;
     display: flex;
@@ -52,9 +87,22 @@ body {
     text-shadow: 2px 2px 4px #000000;
 }
 
-#icon-img {
+#icon-img, #icon1-img, #icon2-img {
     width: 5em;
     cursor: move;
     z-index: 10;
     padding-bottom: .2em;
+}
+
+.chicken-tinder {
+    top: 10vh;
+    left: 30vw;
+}
+.tappd {
+    top: 40vh;
+    left: 50vw;
+}
+.wiki-clicker {
+    top: 30vh;
+    left: 60vw;
 }
