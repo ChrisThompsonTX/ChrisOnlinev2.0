@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
     <title>Chris Online</title>
 </head>
-<body>
+<body onload="startTime()">
     <section class="background-container">
         <video class="video-background" src="https://tappd-seeds.s3-us-west-1.amazonaws.com/Movie+on+5-3-20+at+8.28+PM+%232.mov" autoplay muted loop></video>
     </section>
@@ -20,18 +20,23 @@
             </div>
             <div class="nav-right">
                 <div class="social-links">
-                    
+
                 </div>
-                <h2>Clock:goes:here</h2>
+                <div id="txt"></div>
             </div>
         </header>
     <!-- Main -->
         <main>
-
+            <div id="icon chicken-tinder" ondblclick="window.location.href = 'https://w3docs.com';">
+                <img id="icon-img" src="./images/wl5.png">
+                <h2>Chicken Tinder</h2>
+            </div>
         </main>
     <!-- Footer  -->
         <footer class="home-bar">
             <!-- <button>Start</button> -->
         </footer>
+
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
