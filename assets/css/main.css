@@ -52,11 +52,8 @@ body {
 }
 
 #icon-img {
-    width: 4em;
+    width: 5em;
     cursor: move;
     z-index: 10;
-}
-
-#chicken-tinder {
-    
+    padding-bottom: .2em;
 }
