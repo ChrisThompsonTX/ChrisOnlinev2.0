@@ -2,13 +2,23 @@ footer {
     position: absolute;
     bottom: 0;
     height: 3em;
-    background-color: #BFBFC1;
+    background-color: #C0C0C0;
     width: 100vw;
-    border-top: solid lightgray .2em;
+    border-top: solid #FFFFFE .1em;
 }
 
 footer button {
     height: 100%;
     width: 8em;
     padding: .2em;
+}
+
+body {
+    background-color: #008081;
+    /* border-bottom: .1em solid #ABC9CB; */
+}
+
+.video-background {
+    position: absolute;
+    width: 100vw;
 }
