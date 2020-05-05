@@ -95,16 +95,16 @@ main {
 }
 
 .chicken-tinder {
-    top: 10vh;
-    left: 88vw;
+    top: 25vh;
+    left: 70vw;
 }
 .tappd {
-    top: 10vh;
-    left: 78vw;
+    top: 30vh;
+    left: 55vw;
 }
 .wiki-clicker {
-    top: 10vh;
-    left: 68vw;
+    top: 15vh;
+    left: 50vw;
 }
 
 @media only screen and (max-width: 700px) {
