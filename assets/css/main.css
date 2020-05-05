@@ -76,7 +76,7 @@ main {
     color: lightgray;
 }
 
-#icon, #icon1, #icon2 {
+#icon, #icon1, #icon2, #icon3, #icon4, #icon5, #icon6 {
     position: absolute;
     z-index: 9;
     display: flex;
@@ -87,7 +87,7 @@ main {
     text-shadow: 2px 2px 4px #000000;
 }
 
-#icon-img, #icon1-img, #icon2-img {
+#icon-img, #icon1-img, #icon2-img, #icon3-img, #icon4-img, #icon5-img, #icon6-img {
     width: 5em;
     cursor: move;
     z-index: 10;
@@ -106,6 +106,17 @@ main {
     top: 15vh;
     left: 50vw;
 }
+
+.e-mail {
+    top: 40vh;
+    left: 14vw;
+}
+
+.phone {
+    top: 35vh;
+    left: 5vw;
+}
+
 
 @media only screen and (max-width: 700px) {
 
