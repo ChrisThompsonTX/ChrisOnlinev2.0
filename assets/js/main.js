@@ -18,6 +18,8 @@ dragElement(document.getElementById("icon"));
 dragElement(document.getElementById("icon1"));
 dragElement(document.getElementById("icon2"));
 dragElement(document.getElementById("icon3"));
+dragElement(document.getElementById("icon4"));
+dragElement(document.getElementById("icon5"));
 
 function dragElement(elmnt) {
     let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
