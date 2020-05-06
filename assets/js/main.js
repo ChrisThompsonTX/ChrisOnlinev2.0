@@ -1,17 +1,14 @@
 function startTime() {
     let today = new Date();
+    let d = today.getUTCDay();
     let h = today.getHours();
     let m = today.getMinutes();
-    let s = today.getSeconds();
-    m = checkTime(m);
-    s = checkTime(s);
+    let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+    let hour = (h > 12 ? h : h - 12)
+    let timeOfDay = (h > 12 ? "PM" : "AM")
     document.getElementById('txt').innerHTML =
-        h + ":" + m + ":" + s;
+        days[d] + " " + hour + ":" + m + timeOfDay;
     let t = setTimeout(startTime, 500);
-}
-function checkTime(i) {
-    if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
-    return i;
 }
 
 dragElement(document.getElementById("icon"));
