@@ -6,9 +6,9 @@ function startTime() {
     let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
     let hour = (h > 12 ? h - 12 : h)
     let timeOfDay = (h > 12 ? "PM" : "AM")
+    let mins = (m > 9 ? m : `0${m}`)
     document.getElementById('txt').innerHTML =
-        `${days[d-1]}  ${hour}:${m} ${timeOfDay}`
-        // days[d] + " " + hour + ":" + m + timeOfDay;
+        `${days[d-1]}  ${hour}:${mins} ${timeOfDay}`
     let t = setTimeout(startTime, 500);
 }
 
@@ -18,6 +18,7 @@ dragElement(document.getElementById("icon2"));
 dragElement(document.getElementById("icon3"));
 dragElement(document.getElementById("icon4"));
 dragElement(document.getElementById("icon5"));
+dragElement(document.getElementById("icon6"));
 
 function dragElement(elmnt) {
     let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;

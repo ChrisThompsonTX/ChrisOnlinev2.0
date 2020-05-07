@@ -48,7 +48,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     height: 100%;
-    padding-left: .5em;
+    padding-left: 1em;
 }
 
 .nav-left h3 {
@@ -71,6 +71,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     height: 100%;
+    padding-right: 1em ;
 }
 
 main {
@@ -133,6 +134,11 @@ main {
 .resume {
     top: 18vh;
     left: 10vw;
+}
+
+.about {
+    top: 50vh;
+    left: 8vw;
 }
 
 
