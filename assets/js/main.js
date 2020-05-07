@@ -7,7 +7,7 @@ function startTime() {
     let hour = (h > 12 ? h - 12 : h)
     let timeOfDay = (h > 12 ? "PM" : "AM")
     document.getElementById('txt').innerHTML =
-        `${days[d]}  ${hour}:${m} ${timeOfDay}`
+        `${days[d-1]}  ${hour}:${m} ${timeOfDay}`
         // days[d] + " " + hour + ":" + m + timeOfDay;
     let t = setTimeout(startTime, 500);
 }
