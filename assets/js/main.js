@@ -4,10 +4,11 @@ function startTime() {
     let h = today.getHours();
     let m = today.getMinutes();
     let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
-    let hour = (h > 12 ? h : h - 12)
+    let hour = (h > 12 ? h - 12 : h)
     let timeOfDay = (h > 12 ? "PM" : "AM")
     document.getElementById('txt').innerHTML =
-        days[d] + " " + hour + ":" + m + timeOfDay;
+        `${days[d]}  ${hour}:${m} ${timeOfDay}`
+        // days[d] + " " + hour + ":" + m + timeOfDay;
     let t = setTimeout(startTime, 500);
 }
 
